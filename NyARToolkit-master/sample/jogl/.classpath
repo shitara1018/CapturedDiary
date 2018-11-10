@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="src" path="src.old"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/NyARToolKit"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/NyARToolkit.utils.jmf"/>
+	<classpathentry kind="lib" path="C:/Program Files (x86)/JMF2.1.1e/lib/jmf.jar"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/NyARToolkit.utils.j2se"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/NyARToolkit.utils.webcamcapture"/>
+	<classpathentry kind="lib" path="/NyARToolkit.utils.webcamcapture/extlib/webcam-capture-0.3.10-dist/libs/bridj-0.6.2.jar"/>
+	<classpathentry kind="lib" path="/NyARToolkit.utils.webcamcapture/extlib/webcam-capture-0.3.10-dist/libs/slf4j-api-1.7.2.jar"/>
+	<classpathentry kind="lib" path="/NyARToolkit.utils.webcamcapture/extlib/webcam-capture-0.3.10-dist/webcam-capture-0.3.10.jar"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/NyARToolkit.utils.jogl2"/>
+	<classpathentry kind="lib" path="/NyARToolkit.utils.jogl2/extlib/jogamp-all-platforms"/>
+	<classpathentry kind="lib" path="/NyARToolkit.utils.jogl2/extlib/jogamp-all-platforms/jar/gluegen.jar"/>
+	<classpathentry kind="lib" path="/NyARToolkit.utils.jogl2/extlib/jogamp-all-platforms/jar/jogl-all.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>
