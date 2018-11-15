@@ -9,13 +9,14 @@ import java.awt.event.WindowEvent;
 public class MainMenu {
 
 	public static void main(String args[]) {
-		MainWindow m = new MainWindow();
+		MainWindow m = new MainWindow("釣られ日誌");
 		m.setVisible(true);
 	}
 }
 
 class MainWindow extends Frame {
-	public MainWindow() {
+	public MainWindow(String title) {
+		setTitle(title);
 	    setSize(640,480);
 	    setLayout(new FlowLayout());
         Button start = new Button();
