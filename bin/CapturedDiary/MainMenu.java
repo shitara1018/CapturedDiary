@@ -1,4 +1,4 @@
-package jp.nyatla.nyartoolkit.jogl.sample.artk.sketch.webcamcapture;
+package CapturedDiary;
 
 import java.awt.Button;
 import java.awt.Frame;
@@ -22,20 +22,20 @@ class MainWindow extends Frame
 	public MainWindow(String title)//文字列型タイトルを受け取り、表示するウィンドの設定
 	{
 		setTitle(title);
-	    setSize(640,480);
+	    setSize(1280,960);
 	    setLayout(null);
 
         Button start = new Button();//ゲームスタートボタンのセッティング
         start.setLabel("ゲーム開始");
-        start.setSize(100,40);
-        start.setLocation(270,150);
+        start.setSize(200,80);
+        start.setLocation(540,300);
 	    add(start);
 	    start.addActionListener(new StartPush());
 
      	Button lib = new Button();//図鑑表示ボタンのセッティング
 	    lib.setLabel("図鑑");
-	    lib.setSize(100,40);
-	    lib.setLocation(270,320);
+	    lib.setSize(200,80);
+	    lib.setLocation(540,600);
 	    add(lib);
 	    lib.addActionListener(new LibPush());
 
@@ -64,9 +64,10 @@ class StartPush implements ActionListener
 class LibPush implements ActionListener
 {
    private static final String[] args = null;
+
    public void actionPerformed(ActionEvent e)
    {
-
+       Library.main(args);
    }
 }
 
