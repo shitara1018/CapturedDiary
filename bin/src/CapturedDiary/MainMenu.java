@@ -64,9 +64,10 @@ class StartPush implements ActionListener
 class LibPush implements ActionListener
 {
    private static final String[] args = null;
+
    public void actionPerformed(ActionEvent e)
    {
-
+       Library.main(args);
    }
 }
 
