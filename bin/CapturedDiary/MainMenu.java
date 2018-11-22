@@ -43,6 +43,8 @@ class MainWindow extends Frame
 	}
 }
 
+
+
 class MainExit extends WindowAdapter
 {
 	public void windowClosing(WindowEvent e)
@@ -50,6 +52,8 @@ class MainExit extends WindowAdapter
 		System.exit(0);
 	}
 }
+
+
 
 class StartPush implements ActionListener
 {
@@ -60,6 +64,8 @@ class StartPush implements ActionListener
 		WebCamSample.main(args);
 	}
 }
+
+
 
 class LibPush implements ActionListener
 {
