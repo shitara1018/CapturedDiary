@@ -31,7 +31,7 @@ class Thunnus extends Fish
 		}
 	}
 	*/
-	
+	/*
 	public static void Addcap() 
 	{
 		if(capture == null) 
@@ -44,7 +44,7 @@ class Thunnus extends Fish
 			capture = capture++;
 		}
 	}
-	
+	*/
 	/*
 	public static void BigCheck(double cap_size) 
 	{
@@ -73,6 +73,11 @@ class Thunnus extends Fish
 		}
 	}
 	*/
+	
+	public static int ReqID()
+	{
+		return fish_id;
+	}
 	
 	public static Image ReqImage() 
 	{
@@ -110,6 +115,11 @@ class Thunnus extends Fish
 			req_name = fish_name;
 		}
 		return req_name;
+	}
+	
+	public static Double ReqSiz()
+	{
+		return fish_size;
 	}
 	
 	/*

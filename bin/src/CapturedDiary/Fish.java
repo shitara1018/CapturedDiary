@@ -13,7 +13,7 @@ class Fish
 	/*static BufferedImage fish_im;*/
 	
 	
-	public static void Addcap() 
+	public static void AddCap() 
 	{
 		if(capture == null) 
 		{

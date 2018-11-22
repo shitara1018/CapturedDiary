@@ -12,6 +12,7 @@ public class Mackerel extends Fish {
 	static Double fish_size = 25.0;
 	static BufferedImage fish_im;
 	
+	/*
 	public static void Addcap() 
 	{
 		if(capture == null) 
@@ -23,6 +24,11 @@ public class Mackerel extends Fish {
 		{
 			capture = capture++;
 		}
+	}
+	*/
+	public static int ReqID()
+	{
+		return fish_id;
 	}
 	
 	public static Image ReqImage() 
@@ -63,4 +69,8 @@ public class Mackerel extends Fish {
 		return req_name;
 	}
 	
+	public static Double ReqSiz()
+	{
+		return fish_size;
+	}
 }
