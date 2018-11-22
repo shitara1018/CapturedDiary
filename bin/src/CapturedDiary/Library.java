@@ -35,6 +35,7 @@ class LibraryWindow extends Frame
 		Icon thun_Ic = new ImageIcon((Thunnus.ReqImage()));
 		String thun_name = Thunnus.ReqName();
 		JButton thun_bt = new JButton(thun_Ic);
+		thun_bt.addActionListener(new FishPush());
 
 		/*
 		for(int i = 0; i < 4; i++)
