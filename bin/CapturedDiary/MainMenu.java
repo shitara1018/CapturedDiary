@@ -31,19 +31,26 @@ class MainWindow extends Frame
         start.setLocation(540,300);
 	    add(start);
 	    start.addActionListener(new StartPush());
-
+	    
      	Button lib = new Button();//図鑑表示ボタンのセッティング
 	    lib.setLabel("図鑑");
 	    lib.setSize(200,80);
 	    lib.setLocation(540,600);
 	    add(lib);
 	    lib.addActionListener(new LibPush());
+	    
+	    /*
+	    Button test = new Button();
+	    test.setLabel("AddTest");
+	    test.setSize(200, 80);
+	    test.setLocation(1280 / 3 - 100, 960 / 5 - 40);
+	    add(test);
+	    test.addActionListener(new AddTest());
+	    */
 
 	    addWindowListener(new MainExit());
 	}
 }
-
-
 
 class MainExit extends WindowAdapter
 {
@@ -52,8 +59,6 @@ class MainExit extends WindowAdapter
 		System.exit(0);
 	}
 }
-
-
 
 class StartPush implements ActionListener
 {
@@ -65,8 +70,6 @@ class StartPush implements ActionListener
 	}
 }
 
-
-
 class LibPush implements ActionListener
 {
    private static final String[] args = null;
@@ -77,3 +80,14 @@ class LibPush implements ActionListener
    }
 }
 
+
+
+/*
+class AddTest implements ActionListener
+{
+	public void actionPerformed(ActionEvent e)
+	{
+		Thunnus.Addcap();
+	}
+}
+*/

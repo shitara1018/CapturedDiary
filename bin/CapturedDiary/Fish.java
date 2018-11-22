@@ -1,11 +1,5 @@
 package CapturedDiary;
 
-import java.awt.Image;
-import java.awt.image.BufferedImage;
-import java.io.File;
-
-import javax.imageio.ImageIO;
-
 class Fish 
 {
 	
@@ -16,9 +10,10 @@ class Fish
 	static Double most_size = null;
 	static Double worst_size = null;
 	static Integer capture = null;
-	static BufferedImage fish_im;
+	/*static BufferedImage fish_im;*/
 	
-	public static void Addcap() 
+	
+	public static void AddCap() 
 	{
 		if(capture == null) 
 		{
@@ -30,33 +25,42 @@ class Fish
 		}
 	}
 	
-	public static void BigCheck(double cap_size) 
+	public static boolean BigCheck(double cap_size) 
 	{
+		boolean result = false;
+		
 		if(most_size == null) 
 		{
 			most_size = cap_size;
+			result = true;
 		}
 		else if(most_size != null && cap_size > most_size) 
 		{
 			most_size = cap_size;
+			result = true;
 		}
-		else {
-			;
-		}
+		
+		return result;
 	}
 	
-	public static void SmallCheck(double cap_size) 
+	public static boolean SmallCheck(double cap_size) 
 	{
+		boolean result = false;
+		
 		if(worst_size == null) 
 		{
 			worst_size = cap_size;
+			result = true;
 		}
 		else if(worst_size != null && cap_size < worst_size)
 		{
 			worst_size = cap_size;
+			result = true;
 		}
+		
+		return result;
 	}
-	
+	/*
 	public static Image ReqImage() 
 	{
 		Image req_im = null;
@@ -87,6 +91,7 @@ class Fish
 		}
 		return req_name;
 	}
+	*/
 	
 	public static Integer ReqCap()
 	{
