@@ -2,7 +2,7 @@ package CapturedDiary;
 
 class Fish 
 {
-	
+	/*
 	static int fish_id;
 	static String fish_name;
 	static String exte;
@@ -10,9 +10,10 @@ class Fish
 	static Double most_size = null;
 	static Double worst_size = null;
 	static Integer capture = null;
+	*/
 	/*static BufferedImage fish_im;*/
 	
-	
+	/*
 	public static void AddCap() 
 	{
 		if(capture == null) 
@@ -92,7 +93,7 @@ class Fish
 		return req_name;
 	}
 	*/
-	
+	/*
 	public static Integer ReqCap()
 	{
 		return capture;
@@ -107,5 +108,6 @@ class Fish
 	{
 		return worst_size;
 	}
+	*/
 
 }

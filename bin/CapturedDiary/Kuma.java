@@ -6,11 +6,11 @@ import java.io.File;
 
 import javax.imageio.ImageIO;
 
-class Thunnus extends Fish 
-{	
-	static int fish_id = 1;
-	static String fish_name = "マグロ";
-	static Double fish_size = 150.0;
+class Kuma extends Fish 
+{
+	static int fish_id = 3;
+	static String fish_name = "釣られクマ―";
+	static Double fish_size = 180.0;
 	static Double most_size = null;
 	static Double worst_size = null;
 	static Integer capture = null;
@@ -20,45 +20,18 @@ class Thunnus extends Fish
 	{
 		if(capture == null) 
 		{
-			capture = 1;
+			capture = 0;
+			capture = capture + 1;
 		}
-		else
+		else 
 		{
 			capture = capture + 1;
 		}
-	}
-	
-	/*
-	Thunnus()
-	{
 		
-		super.fish_id = 1;
-		super.fish_name = "マグロ";
-		super.fish_size = 150.0; 		
-		try
-		{
-			fish_im = ImageIO.read(new File("thunnus.jpg"));
-		}
-		catch(Exception e)
-		{
-			e.printStackTrace();
-		}
+		return;
 	}
-	*/
-	/*
-	public static void Addcap() 
-	{
-		if(capture == null) 
-		{
-			capture = 0;
-			capture = capture++;
-		}
-		else if(capture > 0) 
-		{
-			capture = capture++;
-		}
-	}
-	*/
+
+	
 	public static boolean BigCheck(double cap_size) 
 	{
 		boolean result = false;
@@ -94,7 +67,6 @@ class Thunnus extends Fish
 		
 		return result;
 	}
-
 	
 	public static int ReqID()
 	{
@@ -119,7 +91,7 @@ class Thunnus extends Fish
 		{
 			try
 			{
-				req_im = ImageIO.read(new File("thunnus.jpg"));
+				req_im = ImageIO.read(new File("kuma.jpg"));
 			}
 			catch(Exception e)
 			{
@@ -144,12 +116,11 @@ class Thunnus extends Fish
 		return fish_size;
 	}
 	
-	
 	public static Integer ReqCap()
 	{
 		return capture;
 	}
-	
+
 	public static Double ReqMosS()
 	{
 		return most_size;
@@ -159,5 +130,4 @@ class Thunnus extends Fish
 	{
 		return worst_size;
 	}
-	
 }

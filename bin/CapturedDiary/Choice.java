@@ -14,6 +14,10 @@ class Choice
 		{
 			Mackerel.AddCap();
 		}
+		else if(choice == 3)
+		{
+			Kuma.AddCap();
+		}
 	}
 
 	public static boolean BigCheck(int choice, double cap_size)
@@ -27,6 +31,10 @@ class Choice
 		else if(choice == 2)
 		{
 			result = Mackerel.BigCheck(cap_size);
+		}
+		else if(choice == 3)
+		{
+			result = Kuma.BigCheck(cap_size);
 		}
 
 		return result;
@@ -44,6 +52,10 @@ class Choice
 		{
 			result = Mackerel.SmallCheck(cap_size);
 		}
+		else if(choice == 3)
+		{
+			result = Kuma.SmallCheck(cap_size);
+		}
 
 		return result;
 	}
@@ -59,6 +71,10 @@ class Choice
 		else if(choice == 2)
 		{
 			req_cap = Mackerel.ReqCap();
+		}
+		else if(choice == 3)
+		{
+			req_cap = Kuma.ReqCap();
 		}
 
 		return req_cap;
@@ -76,6 +92,10 @@ class Choice
 		{
 			req_ms = Mackerel.ReqMosS();
 		}
+		else if(choice == 3)
+		{
+			req_ms = Kuma.ReqMosS();
+		}
 
 		return req_ms;
 	}
@@ -92,6 +112,10 @@ class Choice
 		{
 			req_ws = Mackerel.ReqWorS();
 		}
+		else if(choice == 3)
+		{
+			req_ws = Kuma.ReqWorS();
+		}
 
 		return req_ws;
 	}
@@ -106,6 +130,10 @@ class Choice
 		else if(choice == 2)
 		{
 			req_id = Mackerel.ReqID();
+		}
+		else if(choice == 3)
+		{
+			req_id = Kuma.ReqID();
 		}
 
 		return req_id;
@@ -122,6 +150,10 @@ class Choice
 		{
 			req_im = Mackerel.ReqImage();
 		}
+		else if(choice == 3)
+		{
+			req_im = Kuma.ReqImage();
+		}
 
 		return req_im;
 	}
@@ -137,6 +169,10 @@ class Choice
 		{
 			req_name = Mackerel.ReqName();
 		}
+		else if(choice == 3)
+		{
+			req_name = Kuma.ReqName();
+		}
 
 		return req_name;
 	}
@@ -151,6 +187,10 @@ class Choice
 		else if(choice == 2)
 		{
 			req_siz = Mackerel.ReqSiz();
+		}
+		else if(choice == 3)
+		{
+			req_siz = Kuma.ReqSiz();
 		}
 
 		return req_siz;
