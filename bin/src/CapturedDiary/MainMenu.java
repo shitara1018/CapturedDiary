@@ -39,14 +39,14 @@ class MainWindow extends Frame
 	    add(lib);
 	    lib.addActionListener(new LibPush());
 	    
-	    /*
+	    
 	    Button test = new Button();
 	    test.setLabel("AddTest");
 	    test.setSize(200, 80);
 	    test.setLocation(1280 / 3 - 100, 960 / 5 - 40);
 	    add(test);
 	    test.addActionListener(new AddTest());
-	    */
+	    
 
 	    addWindowListener(new MainExit());
 	}
@@ -82,12 +82,12 @@ class LibPush implements ActionListener
 
 
 
-/*
+
 class AddTest implements ActionListener
 {
 	public void actionPerformed(ActionEvent e)
 	{
-		Thunnus.Addcap();
+		Thunnus.AddCap();
 	}
 }
-*/
+
