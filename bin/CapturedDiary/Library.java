@@ -40,7 +40,7 @@ class LibraryWindow extends Frame
 		setSize(sws_x, sws_y);
 		setLayout(null);
 
-		ImageIcon thun_ic = new ImageIcon((Thunnus.ReqImage()));
+		ImageIcon thun_ic = new ImageIcon((Thunnus.ReqIcon()));
 		String thun_name = Thunnus.ReqName();
 		JButton thun_bt = new JButton(thun_ic);
 		thun_bt.setSize(bts_x, bts_y);
@@ -57,9 +57,9 @@ class LibraryWindow extends Frame
 		add(thun_lb);
 
 
-		/*Icon mack_ic = new ImageIcon((Mackerel.ReqImage()))*/
+		/*ImageIcon mack_ic = new ImageIcon((Mackerel.ReqIcon()))*/
 		String mack_name = Mackerel.ReqName();
-		JButton mack_bt = new JButton();
+		JButton mack_bt = new JButton(/*mack_ic*/);
 		mack_bt.setSize(bts_x, bts_y);
 		mack_bt.setLocation(SetButton.SetPointX(sws_x, bts_x), SetButton.SetPointY(sws_y, bts_y));
 		add(mack_bt);
@@ -74,8 +74,9 @@ class LibraryWindow extends Frame
 		add(mack_lb);
 
 
+		/*ImageIcon kuma_ic = new ImageIcon((Kuma.ReqIcon()));*/
 		String kuma_name = Kuma.ReqName();
-		JButton kuma_bt = new JButton();
+		JButton kuma_bt = new JButton(/*kuma_ic*/);
 		kuma_bt.setSize(bts_x, bts_y);
 		kuma_bt.setLocation(SetButton.SetPointX(sws_x, bts_x), SetButton.SetPointY(sws_y, bts_y));
 		add(kuma_bt);

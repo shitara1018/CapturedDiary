@@ -73,15 +73,27 @@ public class Mackerel extends Fish {
 	public static Image ReqImage() 
 	{
 		Image req_im = null;
+	
+		req_im = Toolkit.getDefaultToolkit().getImage("./src/CapturedDiary/mackerel.png");
+		
+		return req_im;
+	}
+	
+	public static Image ReqIcon() 
+	{
+		Image req_ic = null;
 		
 		if(capture == null) {
-			req_im = Toolkit.getDefaultToolkit().getImage("./src/CapturedDiary/question.png");
+			req_ic = Toolkit.getDefaultToolkit().getImage("./src/CapturedDiary/question.png");
 		}
 		else 
 		{
-			req_im = Toolkit.getDefaultToolkit().getImage("./src/CapturedDiary/mackerel.png");
+			req_ic = Toolkit.getDefaultToolkit().getImage("./src/CapturedDiary/mackerel.png");
 		}
-		return req_im;
+		
+		req_ic = req_ic.getScaledInstance(150, 150, Image.SCALE_DEFAULT);
+		
+		return req_ic;
 	}
 	
 	public static String ReqName()
