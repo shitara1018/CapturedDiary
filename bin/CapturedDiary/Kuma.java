@@ -1,10 +1,8 @@
 package CapturedDiary;
 
 import java.awt.Image;
+import java.awt.Toolkit;
 import java.awt.image.BufferedImage;
-import java.io.File;
-
-import javax.imageio.ImageIO;
 
 class Kuma extends Fish 
 {
@@ -78,25 +76,11 @@ class Kuma extends Fish
 		Image req_im = null;
 		
 		if(capture == null) {
-			try 
-			{
-				req_im = ImageIO.read(new File("question.jpg"));
-			}
-			catch(Exception e)
-			{
-				e.printStackTrace();
-			}
+			req_im = Toolkit.getDefaultToolkit().getImage("./src/CapturedDiary/question.png");
 		}
 		else 
 		{
-			try
-			{
-				req_im = ImageIO.read(new File("kuma.jpg"));
-			}
-			catch(Exception e)
-			{
-				e.printStackTrace();
-			}
+			req_im = Toolkit.getDefaultToolkit().getImage("./src/CapturedDiary/kuma.png");
 		}
 		return req_im;
 	}

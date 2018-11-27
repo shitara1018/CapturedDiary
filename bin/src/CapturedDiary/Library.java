@@ -8,6 +8,7 @@ import java.awt.event.ActionListener;
 import java.awt.event.WindowAdapter;
 import java.awt.event.WindowEvent;
 
+import javax.swing.ImageIcon;
 import javax.swing.JButton;
 
 public class Library {
@@ -39,9 +40,9 @@ class LibraryWindow extends Frame
 		setSize(sws_x, sws_y);
 		setLayout(null);
 
-		/*Icon thun_ic = new ImageIcon((Thunnus.ReqImage()));*/
+		ImageIcon thun_ic = new ImageIcon((Thunnus.ReqImage()));
 		String thun_name = Thunnus.ReqName();
-		JButton thun_bt = new JButton(/*thun_ic*/);
+		JButton thun_bt = new JButton(thun_ic);
 		thun_bt.setSize(bts_x, bts_y);
 		thun_bt.setLocation(SetButton.SetPointX(sws_x,bts_x), SetButton.SetPointY(sws_y, bts_y));
 		add(thun_bt);
@@ -55,7 +56,7 @@ class LibraryWindow extends Frame
 		thun_lb.setLocation(SetLabel.SetPointX(sws_x, lbs_x), SetLabel.SetPointY(sws_y, lbs_y, bts_y));
 		add(thun_lb);
 
-		
+
 		/*Icon mack_ic = new ImageIcon((Mackerel.ReqImage()))*/
 		String mack_name = Mackerel.ReqName();
 		JButton mack_bt = new JButton();
@@ -71,8 +72,8 @@ class LibraryWindow extends Frame
 		mack_lb.setFont(new Font("Arial", Font.PLAIN,20));
 		mack_lb.setLocation(SetLabel.SetPointX(sws_x, lbs_x), SetLabel.SetPointY(sws_y, lbs_y, bts_y));
 		add(mack_lb);
-		
-		
+
+
 		String kuma_name = Kuma.ReqName();
 		JButton kuma_bt = new JButton();
 		kuma_bt.setSize(bts_x, bts_y);
