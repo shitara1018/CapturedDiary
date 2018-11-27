@@ -1,10 +1,8 @@
 package CapturedDiary;
 
 import java.awt.Image;
+import java.awt.Toolkit;
 import java.awt.image.BufferedImage;
-import java.io.File;
-
-import javax.imageio.ImageIO;
 
 public class Mackerel extends Fish {
 	static int fish_id = 2;
@@ -77,25 +75,11 @@ public class Mackerel extends Fish {
 		Image req_im = null;
 		
 		if(capture == null) {
-			try 
-			{
-				req_im = ImageIO.read(new File("question.jpg"));
-			}
-			catch(Exception e)
-			{
-				e.printStackTrace();
-			}
+			req_im = Toolkit.getDefaultToolkit().getImage("./src/CapturedDiary/question.png");
 		}
 		else 
 		{
-			try
-			{
-				req_im = ImageIO.read(new File("mackerel.jpg"));
-			}
-			catch(Exception e)
-			{
-				e.printStackTrace();
-			}
+			req_im = Toolkit.getDefaultToolkit().getImage("./src/CapturedDiary/mackerel.png");
 		}
 		return req_im;
 	}

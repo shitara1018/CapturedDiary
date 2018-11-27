@@ -157,6 +157,25 @@ class Choice
 
 		return req_im;
 	}
+	
+	public static Image ReqIcon(int choice)
+	{
+		Image req_ic = null;
+		if(choice == 1)
+		{
+			req_ic = Thunnus.ReqIcon();
+		}
+		else if(choice == 2)
+		{
+			req_ic = Mackerel.ReqIcon();
+		}
+		else if(choice == 3)
+		{
+			req_ic = Kuma.ReqIcon();
+		}
+
+		return req_ic;
+	}
 
 	public static String ReqName(int choice)
 	{

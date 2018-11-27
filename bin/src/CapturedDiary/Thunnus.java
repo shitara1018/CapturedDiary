@@ -102,20 +102,20 @@ class Thunnus extends Fish
 	{
 		Image req_im = null;
 
-		if(capture == null) {
-			req_im = Toolkit.getDefaultToolkit().getImage("./src/CapturedDiary/question.png");
-		/*	try
+		/*if(capture == null) {
+			req_im = Toolkit.getDefaultToolkit().getImage("./src/CapturedDiary/question.jpg");
+			try
 			{
 				req_im = ImageIO.read(new File("./src/CapturedDiary/question.png"));
 			}
 			catch(Exception e)
 			{
 				e.printStackTrace();
-			}*/
-		}
-		else
-		{
-			req_im = Toolkit.getDefaultToolkit().getImage("./src/CapturedDiary/thunnus.png");
+			}
+		}*/
+		/*else
+		{*/
+			req_im = Toolkit.getDefaultToolkit().getImage("./src/CapturedDiary/thunnus.jpg");
 			/*
 			try
 			{
@@ -124,12 +124,29 @@ class Thunnus extends Fish
 			catch(Exception e)
 			{
 				e.printStackTrace();
-			}*/
-		}
+			}
+		}*/
 
 		req_im = req_im.getScaledInstance(150, 150, Image.SCALE_DEFAULT);
 
 		return req_im;
+	}
+
+	public static Image ReqIcon()
+	{
+		Image req_ic = null;
+
+		if(capture == null) {
+			req_ic = Toolkit.getDefaultToolkit().getImage("./src/CapturedDiary/question.jpg");
+		}
+		else
+		{
+			req_ic = Toolkit.getDefaultToolkit().getImage("./src/CapturedDiary/thunnus.jpg");
+		}
+
+		req_ic = req_ic.getScaledInstance(150, 150, Image.SCALE_DEFAULT);
+
+		return req_ic;
 	}
 
 	public static String ReqName()
