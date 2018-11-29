@@ -1,6 +1,16 @@
 package CapturedDiary;
 
-class Processing {
+import java.util.Random;
+
+class Processing 
+{
+	
+	public static int CapCon()
+	{
+		Random r = new Random();
+		int fish_id = r.nextInt(3) + 1;
+		return fish_id;
+	}
 	
 	public static void AddCap(int choice)
 	{
@@ -33,7 +43,14 @@ class Processing {
 		{
 			req_siz = Kuma.ReqSiz();
 		}
+		
 		return req_siz;
+	}
+	
+	public static double SizCon(double cap_size)
+	{
+		cap_size = cap_size * (Math.random() + 0.5);
+		return cap_size;
 	}
 
 	public static boolean BigCheck(int choice, double cap_size)
