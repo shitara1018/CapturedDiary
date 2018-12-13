@@ -78,7 +78,10 @@ public class WebCamSample extends GlSketch
 				this.nyar.update(this.sensor);
 				if(this.nyar.isExist(this.id)){
 					this.nyar.loadTransformMatrix(gl,this.id);
-					this.render.colorCube(gl,40,0,0,20);
+					this.render.colorCube(gl,20,10,10,30);
+					this.render.colorCube(gl,20,-10,-10,10);
+					this.render.colorCube(gl,20,10,-10,20);
+					this.render.colorCube(gl,20,-10,10,40);
 				}
 				Thread.sleep(1);
 			} catch (Exception e) {
